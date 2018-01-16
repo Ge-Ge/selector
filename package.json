@@ -1,0 +1,30 @@
+{
+    "name": "selector",
+    "version": "1.0.0",
+    "description": "返回string，用于查找Element",
+    "main": "index.ts",
+    "scripts": {
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ge-ge/selector.git"
+    },
+    "keywords": [
+        "js",
+        "element",
+        "selector"
+    ],
+    "author": "ge-ge",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ge-ge/selector/issues"
+    },
+    "homepage": "https://github.com/ge-ge/selector#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "ts-loader": "^3.2.0",
+        "typescript": "^2.6.2",
+        "webpack": "^3.10.0"
+    }
+}
