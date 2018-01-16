@@ -1,3 +1,5 @@
+"use strict";
+var indexof = require("indexof-element");
 /**
  * @description 返回Element的css selector
  * @param node
@@ -38,20 +40,4 @@ function cssSelector(node) {
     }
     return selector;
 }
-function indexof(el) {
-    if (!el.parentElement)
-        return -1;
-    var list = el.parentElement.children;
-    if (!list)
-        return -1;
-    var len = list.length;
-    if (indexof)
-        return indexof.call(list, el);
-    for (var i = 0; i < len; ++i) {
-        if (el == list[i])
-            return i;
-    }
-    return -1;
-}
-;
-export default cssSelector;
+module.exports = cssSelector;

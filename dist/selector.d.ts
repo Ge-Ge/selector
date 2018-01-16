@@ -4,4 +4,4 @@
  * @returns {String} selector
  */
 declare function cssSelector(node: Element): string;
-export default cssSelector;
+export = cssSelector;

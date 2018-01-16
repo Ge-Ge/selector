@@ -9,8 +9,7 @@ npm i @ge-ge/selector
 # Usage
 
 ```js
-    const selector = require('')
-    let element = document.getElementById('')
-    let cssSelector = selector(element)
+    const selector = require('@ge-ge/selector')
+    let cssSelector = selector(document.body)
     // console.log(cssSelector)
 ```

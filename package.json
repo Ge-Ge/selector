@@ -1,6 +1,6 @@
 {
   "name": "@ge-ge/selector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "返回string，用于查找Element",
   "scripts": {
     "build": "tsc"
@@ -20,7 +20,9 @@
     "url": "https://github.com/ge-ge/selector/issues"
   },
   "homepage": "https://github.com/ge-ge/selector#readme",
-  "dependencies": {},
+  "dependencies": {
+    "indexof-element": "^1.0.1"
+  },
   "devDependencies": {
     "cz-conventional-changelog": "^2.1.0",
     "typescript": "^2.6.2"
