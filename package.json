@@ -1,6 +1,6 @@
 {
   "name": "@ge-ge/selector",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "返回string，用于查找Element",
   "scripts": {
     "build": "tsc"
@@ -27,7 +27,7 @@
     "cz-conventional-changelog": "^2.1.0",
     "typescript": "^2.6.2"
   },
-  "main": "./dist/selector.js",
+  "main": "./dist/index.js",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
