@@ -26,16 +26,18 @@ function cssSelector(node) {
     r(node);
     // 生成返回的css selector字符串
     for (var i = list.length - 1; i >= 0; i--) {
-        selector += list[i].tagName;
-        if (list[i].id) {
-            selector += "[id = '" + list[i].id + "']";
+        if (list[i].tagName) {
+            selector += list[i].tagName;
+            if (list[i].id) {
+                selector += "[id = '" + list[i].id + "']";
+            }
+            else if (list[i].className) {
+                selector += "[class = '" + list[i].className + "']";
+            }
+            if (list[i].index > 0)
+                selector += ":nth-child(" + list[i].index + ")";
         }
-        else if (list[i].className) {
-            selector += "[class = '" + list[i].className + "']";
-        }
-        if (list[i].index > 0)
-            selector += ":nth-child(" + list[i].index + ")";
-        if (i > 0)
+        if (i > 0 && list[i - 1].tagName)
             selector += ' > ';
     }
     return selector;
